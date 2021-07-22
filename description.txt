@@ -1,0 +1,9 @@
+Heuristic algorithm:
+- instance loading;
+- removing from the loaded nucleotide sequences positions with reliability below a certain predetermined threshold (this parameter set by the user);
+- creating a graph with vertices corresponding to all several-letter substrings of the sequence after the above operation 
+(the length of the substrings in the range from 4 to 9 letters is to be the second parameter set by the user); 
+- connecting the vertices with undirected edges, if they correspond to the same substrings occurring in different sequences;
+- search in the graph in a heuristic manner for a clique or a structure similar to a click, in which each input sequence will be represented by exactly one vertex;
+- writing the result on the output in the form of:
+input sequence number, position number in this sequence, for each substring included in the clique (structure similar to a clique).
